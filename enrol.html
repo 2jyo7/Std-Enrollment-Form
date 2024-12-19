@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Enrollments</title>
+    <link rel="stylesheet" href="./enrol.css" />
+  </head>
+  <body>
+    <h1 class="form-title">Students Enrollment Form</h1>
+    <div class="container">
+      <!-- student-table -->
+      <div id="Student-card" class="std-card"></div>
+      <div class="div-form">
+        <!-- error-container -->
+        <h4 id="errorText" class="error-style"></h4>
+
+        <!-- form -->
+        <form id="Student-enrolls" class="enrol-form">
+          <h1 class="card-title">Enrolling Form</h1>
+
+          <div class="input-fields">
+            <label for="Student-Name" class="enrol-name-label">Name:</label>
+            <input
+              class="enrol-name"
+              type="text"
+              placeholder="Student-Name"
+              id="Student-Name"
+              name="Student-Name"
+            />
+
+            <label for="Student-email">Email:</label>
+            <input
+              type="email"
+              placeholder="Student-email"
+              id="Student-email"
+              name="Student-email"
+            />
+            <label for="Student-websites">Websites:</label>
+            <input
+              type="text"
+              placeholder="Student-websites"
+              id="Student-websites"
+              name="Student-websites"
+            />
+
+            <label for="Student-img-url">Img-url:</label>
+            <input
+              type="text"
+              placeholder="Student-img-url"
+              id="Student-img-url"
+              name="Student-img-url"
+            />
+          </div>
+          <div class="select-grp">
+            <select id="Student-gender" name="Student-gender">
+              <option value="">None</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <div class="checkbox-grp">
+            <label>
+              <input
+                type="checkbox"
+                value="Javascript"
+                name="Student-skills"
+              />Javascript
+            </label>
+            <label>
+              <input type="checkbox" value="HTML5" name="Student-skills" />HTML5
+            </label>
+            <label>
+              <input type="checkbox" value="CSS3" name="Student-skills" />CSS3
+            </label>
+          </div>
+
+          <div class="btn-grp">
+            <button type="submit" style="background-color: blue">
+              Add Student
+            </button>
+            <button id="clear-form" style="background-color: red">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/Javascript" src="./enrol.js"></script>
+  </body>
+</html>
